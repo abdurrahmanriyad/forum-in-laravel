@@ -1,0 +1,140 @@
+/*=========== main menu bar ================*/
+.admin_main_menu_bar_area{
+    background: #00A9AD;
+}
+.admin_content_area {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+.main_menu_bar_area.admin_main_menu_bar_area .logo {
+    height: 50px;
+    margin-top: 3px;
+}
+.main_menu_bar_area.admin_main_menu_bar_area .site_info {
+    color: #fff;
+    margin: 11px 20px 0 10px;
+}
+.admin_main_menu_bar_area .search_bar .btn-success {
+    background: #fff none repeat scroll 0 0;
+    border-color: #fff;
+    color: #000;
+}
+.main_menu_bar_area.admin_main_menu_bar_area .search_bar {
+    margin-left: 13%;
+    margin-top: 10px;
+    width: 50%;
+}
+
+/*==================sidebar ==================*/
+
+.sidebar_area ul.sidebar_menu_area {
+    list-style-type: none;
+    height: 70vh;
+}
+.sidebar_area ul.sidebar_menu_area li.sidebar_menu{
+
+}
+.sidebar_area ul.sidebar_menu_area li.sidebar_menu a {
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    display: block;
+    padding: 8px 20px;
+    color: #222;
+}
+.sidebar_area ul.sidebar_menu_area li.sidebar_menu.active{
+    background: #f1f1f1;
+    border-left: 2px solid #000;
+}
+.sidebar_area ul.sidebar_menu_area li.sidebar_menu.active a:hover{
+    background: none;
+}
+
+.sidebar_area ul.sidebar_menu_area li.sidebar_menu a:hover{
+    background: #f5f5f5;
+}
+
+
+/*==================== admin content ===================*/
+.admin_content {
+    padding: 20px 10px;
+}
+.admin_content_header h3 {
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.admin_content_header p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.forum_list {
+    padding: 10px 0 10px;
+}
+.forum_list .forum:last-child{
+    border: none;
+}
+.forum {
+    border-bottom: 2px solid #fff;
+    padding: 20px 0;
+}
+.forum .thumbnail {
+    border-radius: 50%;
+    color: #e74c3c;
+    font-size: 25px;
+    margin-right: 15px;
+    min-width: 40px;
+    padding: 1px 12px;
+    margin-bottom: 0;
+}
+.forum .text h4 {
+    font-weight: 100;
+    letter-spacing: 0.05px;
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+.forum .text p {
+    color: #757575;
+    margin: 0;
+}
+
+.forum .action ul li {
+    padding: 0;
+}
+.forum .action ul li a, .profile_info td a{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+}
+/*=================profile area ===================*/
+.profile_basic {
+    background: #9BD7D5;
+    height: 150px;
+    position: relative;
+    margin-top: 34px;
+}
+.profile_img {
+    width: 160px;
+    border: 4px solid #fff;
+    position: absolute;
+    bottom: -57px;
+    left: 9%;
+}
+.profile_name {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 8px;
+    left: 31%;
+}
+.profile_info {
+    margin-top: 94px;
+}
+
+/*================== foooter area  ===================*/
+.footer_area.admin_footer_area {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-top: 2px solid #fff;
+    color: #757575;
+}

@@ -1,0 +1,499 @@
+body{
+   font-family: "Lato", "sans-serif" !important;
+}
+h1,h2,h3,h4,h5,h6,ul{
+   margin: 0;
+   padding: 0;
+   font-family: "Catamaran", "sans-serif" !important;
+}
+.no_overflow{
+   overflow: hidden;
+}
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+button:focus, a:focus, input:focus{
+   outline: none !important;
+}
+button.btn {
+   border-radius: 4px;
+   box-shadow: none;
+   text-shadow: none;
+   background-image: none;
+}
+.pagination > li > a, .pagination > li > span {
+   color: #757575;
+   background-color: #ccc;
+   margin: 0 8px;
+   border-radius: 2px;
+   padding: 2px 8px;
+   border: none;
+}
+.pagination > li > a:hover, .pagination > li > span:hover {
+   background-color: #fff;
+}
+.pagination > li > a.active{
+   background-color: #fff;
+   color: #363838;
+   box-shadow: 0 1px 2px #c9cccd;
+}
+ul.right_bordered li{
+   padding-right: 8px;
+   padding-left: 8px;
+   border-right: 1px solid #ccc;
+}
+ul.right_bordered li:last-child{
+   border-right: none;
+}
+.box_shadowed{
+   box-shadow: 0 1px 2px #c9cccd;
+}
+.color_success{
+   color: #5CB85C;
+}
+.color_danger{
+   color: #D9534F;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/***************  index page *****************/
+
+/*=============== header area ================*/
+.header_content{
+   position: relative;
+}
+.header_content .top_menu{
+   margin: 0 9%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+.header_content .top_menu ul li a {
+   color: #fff;
+   display: inline-block;
+   font-size: 16px;
+   margin: 5px;
+   padding: 8px 6px;
+   text-decoration: none;
+}
+
+.header_content .site_title {
+   position: absolute;
+   top: 31%;
+   left: 39%;
+   color: #fff;
+}
+.breadcrumb_bar {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   z-index: 999;
+   display: block;
+   right: 0px;
+   color: #fff;
+   background: rgba(178,173,132,0.2);
+   margin: 0 9%;
+   padding: 7px 20px;
+}
+.site_breadcrumb .breadcrumb_text {
+   font-weight: 300;
+   letter-spacing: 0.5px;
+   margin-top: -3px;
+}
+.site_breadcrumb .breadcrumb_text a {
+   font-size: 16px;
+   display: inline-block;
+}
+.site_breadcrumb .breadcrumb_text i{
+   margin-right: 5px;
+   margin-top: 10px;
+   color: #fff;
+   display: inline-block;
+}
+
+.site_breadcrumb .social li a {
+   color: #fff;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   display: inline-block;
+   padding: 3px;
+   width: 27px;
+   text-align: center;
+}
+.no-margin{
+   margin: 0 !important;
+}
+/*=========== main menu bar area ============= */
+
+.main_menu_bar_area .logo{
+   height: 50px;
+}
+.main_menu_bar_area .site_info{
+   margin: 11px 20px 0px 10px;
+   color: rgb(117, 117, 117);
+}
+.main_menu_bar_area .search_bar{
+   margin-top: 10px;
+   width: 60%;
+   margin-left: 15px;
+}
+.main_menu_bar_area .ask_question_btn button.btn {
+   border-radius: 4px;
+   box-shadow: none;
+   border: none;
+   text-shadow: none;
+   background-image: none;
+   padding: 8px 15px;
+}
+.main_menu_bar_area .ask_question_btn {
+   margin-top: 8px;
+   margin-right: 16px;
+}
+.main_menu_bar_area .user_profile button.btn:hover, .main_menu_bar_area .user_profile button.btn:active, .main_menu_bar_area .user_profile button.btn:focus{
+   background: none;
+   border: none;
+   box-shadow:none;
+}
+.main_menu_bar_area .btn.btn-default.dropdown-toggle {
+   background: none;
+   box-shadow: none;
+   border: none;
+}
+
+/*============ content type menu area ==============*/
+.content_type_menu_area {
+   background: #eeeeee;
+   padding: 20px 0px 17px 0px;
+}
+
+/*=======question part area=======*/
+.content_area{
+   background: #eeeeee;
+}
+
+.question_filter_area ul li{
+   padding: 0;
+   margin: 0;
+}
+.question_filter_area ul{
+   margin-left: 1px;
+   margin-bottom: 8px;
+}
+
+.question_filter_area ul li a {
+   display: inline-block;
+   background: #fff;
+   margin: 5px 0px 5px 0px;
+   padding: 6px 11px;
+   font-size: 15px;
+   border: 1px solid #5CB85C;
+}
+
+.question_part_area {
+   /*padding: 30px 0;*/
+}
+.question_area, .ask_question , .tags_area{
+   margin-bottom: 10px;
+   background: #fff;
+}
+.question_content {
+   width: 85%;
+   padding: 18px 0;
+}
+.question_info {
+   width: 15%;
+   font-size: 13px;
+   padding: 18px 8px;
+   color: #757575;
+}
+.question_info i , .question_info_bottom i{
+   font-size: 17px;
+   color: #5CB85C;
+   font-weight: bolder;
+   display: inline-block;
+   padding: 5px;
+   width: 32px;
+   border-radius: 5px;
+   text-align: center;
+   margin-right: 5px;
+   border: 1px solid #5cb85c;
+}
+.question_info .comments {
+   margin: 5px 0;
+}
+.question_info .time {
+   margin-top: 5px;
+}
+
+
+.userinfo{
+   width: 15%;
+}
+.posttext {
+   width: 85%;
+   padding-right: 15px;
+}
+.posttext > h2{
+   font-size: 21px;
+   font-weight: 300;
+   letter-spacing: 0.5px;
+   margin-bottom: 13px;
+}
+.posttext > p {
+   font-size: 14px;
+   color: #757575;
+}
+
+.avatar{
+   margin-left: 20px;
+   position: relative;
+}
+.avatar::after {
+   width: 1px;
+   height: 23px;
+   content: " ";
+   position: absolute;
+   right: 21px !important;
+   background: #ccc;
+   top: 5px;
+}
+
+
+/*=============== sidebar part ==================*/
+.sidebar_box {
+   margin: 15px 0px;
+   background: #ffffff;
+   box-shadow: 0 1px 2px #c9cccd;
+}
+.sidebar_box_title {
+   padding: 15px 20px 15px 20px;
+   border-bottom: 1px solid #ddd;
+   font-weight: 400;
+   letter-spacing: 0.5px;
+}
+.sidebar_box_body {
+   padding: 10px 20px;
+   color: #757575;
+}
+.statistics .sidebar_box_body strong{
+   float: right;
+   color: #000;
+}
+.tags a {
+   color: #fff;
+   background: #888;
+   padding: 0px 6px;
+   margin: 3px 1px;
+   display: inline-block;
+   border-radius: 3px;
+   text-decoration: none;
+}
+.popular_questions li {
+   list-style: none;
+   margin-left: 4px;
+}
+.popular_questions a {
+   display: block;
+   position: relative;
+   padding: 5px 0;
+}
+.popular_questions li:before {
+   display: block;
+   content: "\f0da";
+   font-family: "FontAwesome";
+   float: left;
+   padding-right: 10px;
+   padding-top: 5px;
+}
+
+
+
+
+/*=============pagination part===============*/
+.pagination_bottom .pagination > li:first-child > a, .pagination_bottom .pagination > li:last-child > a{
+   padding: 0;
+   background: none;
+   border: none;
+}
+.pagination_bottom .pagination > li:first-child > a i, .pagination_bottom .pagination > li:last-child > a i{
+   font-size: 23px;
+}
+
+/*============= footer part ==============*/
+.footer_area{
+   color: #757575;
+}
+.footer_area ul.footer_menu{
+   margin-top: 3px;
+}
+.footer_area ul.footer_menu li:first-child{
+   padding-left: 0;
+}
+.footer_area .footer_text{
+   margin-top: 14px;
+}
+.footer_area .logo{
+   margin-right: 15px;
+}
+
+
+
+/***************  single question page *****************/
+.question_part_area.single_question{
+    width:100%
+}
+.question_part_area.single_question .question_content {
+   width: 100%;
+   padding: 18px 0;
+}
+.question_info_bottom {
+   border-top: 1px solid #f1f1f1;
+   padding: 12px;
+}
+.question_info_bottom a{
+   font-size: 16px;
+   color: #757575;
+}
+.question_info i , .question_info_bottom i{
+   font-size: 18px;
+   color: #5CB85C;
+   font-weight: bolder;
+   display: inline-block;
+   padding: 0;
+   border-radius: 0;
+   margin-right: 0px;
+   border: none
+}
+/*========== answer area ==========*/
+.answer_area  .post_an_answer, .answer_area  .answers{
+   box-shadow: 0 1px 2px #c9cccd;
+   background: #fff;
+   padding: 18px 0 0px;
+}
+.answer_area .answer_box textarea, .ask_question input, .ask_question textarea, .user_registration input{
+   border-radius: 0px;
+   box-shadow: none;
+   background: rgb(238, 238, 238) none repeat scroll 0% 0%;
+}
+.answer_area .answer_box :focus{
+   border-color: #ccc;
+}
+.answer_area button.btn{
+   border: none;
+}
+.answer_area .post_an_answer .avatar::after{
+   background: none;
+}
+.answer_area  .answers{
+   margin-top: 25px;
+}
+.answer_area .single_answer {
+   padding-top: 25px;
+   border-bottom: 3px dotted rgb(204, 204, 204);
+}
+.answer_area .single_answer:last-child {
+   border-bottom: none;
+}
+/*======== reply area ===========*/
+.replies {
+   margin-left: 87px;
+   margin-top: 20px;
+   border-left: 4px solid rgb(204, 204, 204);
+   padding: 0 10px;
+   margin-bottom: 20px;
+}
+.replies .reply .question_info_bottom{
+   margin: 0 9%;
+}
+
+.replies .reply .post_an_answer, .replies .reply .answers {
+   box-shadow: none;
+}
+
+
+.replies .reply {
+   border-bottom: 3px dotted rgb(204, 204, 204);
+   padding-top: 23px;
+}
+.replies .reply:last-child{
+   border-bottom: none;
+}
+
+/*============ similar posts area ============*/
+
+.similar_posts_area {
+   box-shadow: 0 1px 2px #c9cccd;
+   background: #fff;
+   padding: 10px;
+   margin: 20px 0px 32px 0px;
+}
+.similar_posts_area .avatar{
+   margin-left: 10px;
+}
+.similar_posts_area .avatar::after{
+   background: none;
+}
+.similar_posts_area .posttext {
+   padding-right: 0px;
+   padding-left: 6px;
+}
+.similar_posts_area h3 {
+   margin-left: 9px;
+   color: rgb(117, 117, 117);
+   font-weight: 400;
+   margin: 10px 9px 8px 9px;
+   letter-spacing: 0.5px;
+}
+.similar_post {
+   padding: 10px 0;
+   background: #f1f1f1;
+   margin: 10px;
+}
+
+
+/**************** register page **********************/
+.user_registration_area {
+   padding: 47px 103px;
+   background: #fff;
+   margin-top: 28px;
+}
+.user_registration input {
+   height: 40px;
+   margin: 21px 0px;
+}
+
+
+
+/************** ask a question page ****************/
+.ask_question{
+   padding: 20px;
+}
+.ask_question input{
+   height: 50px;
+}
+.ask_question .form-group {
+   margin-bottom: 20px;
+}
+
+/***************** tags page *********************/
+.tags_area{
+   padding: 20px;
+}
+.tags_area .tags a {
+   padding: 3px 9px;
+   margin: 4px 2px;
+   font-weight: 400;
+   font-size: 15px;
+}
+
+
+
