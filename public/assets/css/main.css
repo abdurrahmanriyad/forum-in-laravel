@@ -349,7 +349,7 @@ ul.right_bordered li:last-child{
 
 /***************  single question page *****************/
 .question_part_area.single_question{
-    width:100%
+   width:100%
 }
 .question_part_area.single_question .question_content {
    width: 100%;
@@ -494,6 +494,9 @@ ul.right_bordered li:last-child{
    font-weight: 400;
    font-size: 15px;
 }
-
-
-
+/***************** login page *********************/
+.login_area {
+   /*background: #ddd none repeat scroll 0 0;*/
+   margin: 53px 0px;
+   padding: 30px 42px;
+}

@@ -43,9 +43,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-inline">
-                                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                                    <li><a href="#"><i class="fa fa-key"></i> Login</a></li>
-                                    <li><a href="#"><i class="fa fa-user"></i> Register</a></li>
+                                    <li><a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="{{ url('/login') }}"><i class="fa fa-key"></i> Login</a></li>
+                                    <li><a href="{{ url('/register') }}"><i class="fa fa-user"></i> Register</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,15 +116,6 @@
     </div>
 
 
-    <div class="content_type_menu_area"><!-- content view type menu area begin -->
-        <div class="container">
-            <ul class="list-inline text-center right_bordered">
-                <li><a href="#">Questions</a></li>
-                <li><a href="tags.html">Tags</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Unanswered</a></li>
-            </ul>
-        </div>
-    </div><!-- content view type menu area finish -->
+    @yield('shortcuts')
 
 </header> <!--site main  header area finished-->

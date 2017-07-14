@@ -2,6 +2,19 @@
 
 @section('title', 'Home - Forum')
 
+@section('sortcuts')
+    <div class="content_type_menu_area"><!-- content view type menu area begin -->
+        <div class="container">
+            <ul class="list-inline text-center right_bordered">
+                <li><a href="#">Questions</a></li>
+                <li><a href="tags.html">Tags</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Unanswered</a></li>
+            </ul>
+        </div>
+    </div><!-- content view type menu area finish -->
+@endsection
+
 @section('highlighted-filter')
     <div class="row">
         <div class="col-md-8">
