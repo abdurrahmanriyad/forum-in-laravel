@@ -60,6 +60,28 @@
                         </div>
                     </div>
 
+
+                    <div class="form-group{{ $errors->has('profession') ? ' has-error' : '' }}">
+                        <label for="profession" class="col-md-4 control-label">Profession</label>
+
+                        <div class="col-md-6">
+
+                            <select id="profession" name="profession" class="form-control">
+                                <option value="Student">Student</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="mercedes">Blah</option>
+                                <option value="audi">test</option>
+                            </select>
+
+                            @if ($errors->has('profession'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('profession') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                    </div>
+
+
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">
                             <button type="submit" class="btn btn-primary">

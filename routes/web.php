@@ -15,4 +15,11 @@ Route::get('/', 'HomeController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('dashboard')->group(function () {
+    Route::get('user/{id}', 'DashboardController@index');
+    Route::get('user/{id}/forum', 'ForumController@index');
+});
+
+Route::get('logout', 'Auth\LoginController@logout');
