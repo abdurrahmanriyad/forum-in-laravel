@@ -12,46 +12,30 @@
                 <div class="profile_img">
                     <img src="{{ url("assets/img/abdurrahman.jpg") }}" alt="" class="img-responsive">
                 </div>
-                <p class="profile_name">Abdur Rahman</p>
+                <p class="profile_name">{!! $user->name !!}</p>
             </div>
             <div class="profile_info">
                 <table class="table">
                     <thead>
                     <tr>
-                        <td>Information</td>
-                        <td>Action</td>
+                        <th>Information</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tr>
-                        <td>Abdur</td>
+                        <td>Name: {!! $user->name !!}</td>
                         <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
                     </tr>
 
                     <tr>
-                        <td>Rahman</td>
+                        <td>Email: {!! $user->email !!}</td>
                         <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
                     </tr>
 
                     <tr>
-                        <td>rahman.primez@live.com</td>
+                        <td>Profession: {!! $user->profession !!}</td>
                         <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
                     </tr>
-
-                    <tr>
-                        <td>First Name</td>
-                        <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>01813243878</td>
-                        <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Programmer</td>
-                        <td class="color_success"><a><i class="fa fa-edit color_success"></i></a></td>
-                    </tr>
-
 
                 </table>
             </div>

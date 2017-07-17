@@ -9,5 +9,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    public $data = array();
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
 }

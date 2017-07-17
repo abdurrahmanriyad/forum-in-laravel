@@ -42,10 +42,23 @@
                     <div class="top_menu text-right">
                         <div class="row">
                             <div class="col-md-12">
-                                <ul class="list-inline">
+                                <ul class="list-inline menu">
                                     <li><a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a></li>
-                                    <li><a href="{{ url('/login') }}"><i class="fa fa-key"></i> Login</a></li>
-                                    <li><a href="{{ url('/register') }}"><i class="fa fa-user"></i> Register</a></li>
+                                    @if(!Auth::user())
+                                        <li><a href="{{ url('/login') }}"><i class="fa fa-key"></i> Login</a></li>
+                                        <li><a href="{{ url('/register') }}"><i class="fa fa-user"></i> Register</a></li>
+                                    @else
+                                        <div class="btn-group user_profile pull-right" role="group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="{{ url('assets/img/user.jpg') }}" alt="" class="img-circle">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="{{ url('dashboard/user/'.Auth::id()) }}">Dashboard</a></li>
+                                                <li><a href="{{ url('logout') }}">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
@@ -95,17 +108,6 @@
                 </div>
 
                 <div class="col-sm-4">
-
-                    <div class="btn-group user_profile pull-right" role="group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="{{ url('assets/img/user.jpg') }}" alt="" class="img-circle">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Dropdown link</a></li>
-                            <li><a href="#">Dropdown link</a></li>
-                        </ul>
-                    </div>
 
                     <div class="ask_question_btn pull-right">
                         <a href="http://localhost:8888/forum/askquestion.html"><button class="btn btn-success">Ask a Question</button></a>
