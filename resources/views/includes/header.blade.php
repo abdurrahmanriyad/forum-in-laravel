@@ -54,7 +54,7 @@
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a href="{{ url('dashboard/user/'.Auth::id()) }}">Dashboard</a></li>
+                                                <li><a href="{{ url('dashboard/user/'.Auth::id().'/profile') }}">Dashboard</a></li>
                                                 <li><a href="{{ url('logout') }}">Logout</a></li>
                                             </ul>
                                         </div>
@@ -110,7 +110,7 @@
                 <div class="col-sm-4">
 
                     <div class="ask_question_btn pull-right">
-                        <a href="http://localhost:8888/forum/askquestion.html"><button class="btn btn-success">Ask a Question</button></a>
+                        <a href="{{ url('askquestion') }}"><button class="btn btn-success">Ask a Question</button></a>
                     </div>
                 </div>
             </div>

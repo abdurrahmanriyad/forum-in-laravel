@@ -2,7 +2,7 @@
 
 @section('title', 'Home - Forum')
 
-@section('sortcuts')
+@section('shortcuts')
     <div class="content_type_menu_area"><!-- content view type menu area begin -->
         <div class="container">
             <ul class="list-inline text-center right_bordered">

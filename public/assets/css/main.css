@@ -61,6 +61,13 @@ ul.right_bordered li:last-child{
 .color_danger{
    color: #D9534F;
 }
+
+/*=============== header area ================*/
+.select2-container--default .select2-selection--multiple{
+   border-radius: 0;
+}
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -153,6 +160,9 @@ ul.right_bordered li:last-child{
    text-shadow: none;
    background-image: none;
    padding: 8px 15px;
+}
+.ask_question_area {
+   margin-top: 28px;
 }
 .main_menu_bar_area .ask_question_btn {
    margin-top: 8px;
@@ -487,6 +497,9 @@ ul.right_bordered li:last-child{
 }
 .ask_question input{
    height: 50px;
+}
+.ask_question input.select2-search__field{
+   height: 28px;
 }
 .ask_question .form-group {
    margin-bottom: 20px;

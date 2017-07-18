@@ -28,9 +28,10 @@
 
 
 {{--<script src="js/magnitic-popup.js"></script>--}}
-@yield('footer_js')
+
 
 {!! Html::script('assets/js/vendor/bootstrap.min.js') !!}
+@yield('footer_js')
 {!! Html::script('assets/js/main.js') !!}
 
 @yield('footer_script')

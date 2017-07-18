@@ -24,3 +24,5 @@ Route::prefix('dashboard')->group(function () {
 
 
 Route::get('logout', 'Auth\LoginController@logout');
+
+Route::get('askquestion', 'QuestionController@index');
