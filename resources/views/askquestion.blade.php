@@ -13,16 +13,14 @@
                 <div class="form-group">
                     <input type="text" class="form-control"  placeholder="Title">
                 </div>
+
                 <div class="form-group">
-                    <select class="js-example-basic-multiple form-control" multiple="multiple">
-                        <option value="AL">Alabama</option>
-                        <option value="AL">Alabama</option>
-                        <option value="WY">Wyoming</option>
-                    </select>
+                    {{ Form::select('tag_id', $tags , 2, ['class' => 'js-example-basic-multiple form-control', 'multiple' => 'multiple']) }}
                 </div>
+
                 <div class="form-group">
                     <textarea name="editor1" id="editor1" rows="10" cols="80">
-                        Ask your question..
+                    Ask your question..
                     </textarea>
                 </div>
 

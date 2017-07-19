@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="ask_question_btn pull-right">
-                        <a href="http://localhost:8888/forum/askquestion.html"><button class="btn btn-success">Ask a Question</button></a>
+                        <a href="{{ url('askquestion') }}"><button class="btn btn-success">Ask a Question</button></a>
                     </div>
                 </div>
             </div>

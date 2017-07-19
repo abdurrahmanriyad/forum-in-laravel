@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\model\Tag;
 use Illuminate\Http\Request;
 
 class QuestionController extends Controller
@@ -13,7 +14,9 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        return view('askquestion');
+        $Tag = new Tag();
+        $this->data['tags'] = $Tag->getTagsForForm();
+        return view('askquestion', $this->data);
     }
 
     /**
