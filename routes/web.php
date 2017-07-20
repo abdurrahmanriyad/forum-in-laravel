@@ -19,10 +19,10 @@ Auth::routes();
 
 Route::prefix('dashboard')->group(function () {
     Route::get('user/{id}/profile', 'DashboardController@index');
-    Route::get('user/{id}/forums', 'ForumController@index');
+    Route::resource('user/questions', 'QuestionController');
 });
 
 
 Route::get('logout', 'Auth\LoginController@logout');
 
-Route::get('askquestion', 'QuestionController@index');
+Route::get('askquestion', 'QuestionController@askQuestion');

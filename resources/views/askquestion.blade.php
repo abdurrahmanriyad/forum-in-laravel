@@ -9,9 +9,10 @@
 @section('main-content')
     <section class="ask_question_area"> <!--question part begin-->
         <div class="ask_question">
-            <form>
+            <form method="POST" action="{{ 'dashboard/user/questions' }}">
+                {{ csrf_field() }}
                 <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Title">
+                    <input type="text" class="form-control"  placeholder="Title" name="title">
                 </div>
 
                 <div class="form-group">
@@ -19,7 +20,7 @@
                 </div>
 
                 <div class="form-group">
-                    <textarea name="editor1" id="editor1" rows="10" cols="80">
+                    <textarea name="description" id="editor1" rows="10" cols="80">
                     Ask your question..
                     </textarea>
                 </div>

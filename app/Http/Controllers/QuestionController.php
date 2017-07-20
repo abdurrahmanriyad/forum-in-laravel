@@ -14,9 +14,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $Tag = new Tag();
-        $this->data['tags'] = $Tag->getTagsForForm();
-        return view('askquestion', $this->data);
+        return view("dashboard.forums");
     }
 
     /**
@@ -26,7 +24,7 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -37,7 +35,7 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request->all();
     }
 
     /**
@@ -83,5 +81,14 @@ class QuestionController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function askQuestion(){
+        $Tag = new Tag();
+        $this->data['tags'] = $Tag->getTagsForForm();
+        return view('askquestion', $this->data);
     }
 }
